@@ -191,7 +191,7 @@ Testing
 
 Objective of the Project
 
-1. This project was built as a technical assessment to evaluate:
+This project was built as a technical assessment to evaluate:
 
 2. Ability to build a MERN app quickly
 
