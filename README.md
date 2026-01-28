@@ -22,7 +22,7 @@ A. User
 
   1. Manage own tasks only
 
-  2.View personal dashboard
+  2. View personal dashboard
 
 B. Admin
 
