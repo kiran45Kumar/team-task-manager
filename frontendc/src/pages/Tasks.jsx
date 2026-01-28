@@ -60,7 +60,9 @@ const Tasks = () => {
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: 'auto', padding: '2rem' }}>
+    <>
+        <div className="min-h-screen flex items-center justify-center">
+    <div className='bg-gray-800 p-25 rounded-lg shadow-lg' >
       <Navbar />  
       <h2>Tasks</h2>
 
@@ -74,6 +76,7 @@ const Tasks = () => {
           value={newTask.title}
           onChange={handleChange}
           required
+          className='block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6'
           style={{ width: '100%', margin: '0.5rem 0' }}
         />
         <input
@@ -82,6 +85,7 @@ const Tasks = () => {
           placeholder="Description"
           value={newTask.description}
           onChange={handleChange}
+          className='block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6'
           style={{ width: '100%', margin: '0.5rem 0' }}
         />
         <select name="status" value={newTask.status} onChange={handleChange}>
@@ -101,6 +105,9 @@ const Tasks = () => {
         />
       ))}
     </div>
+    </div>
+    </>
+
   );
 };
 

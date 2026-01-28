@@ -26,7 +26,7 @@ const Dashboard = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ maxWidth: '400px', margin: 'auto', padding: '2rem' }}>
+      <div className="p-4 m-50">
         <h2>{ data.username } Dashboard</h2>
         {loading ? <p>Loading...</p> : (
           <div>

@@ -26,8 +26,8 @@ const AdminDashboard = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ maxWidth: '400px', margin: 'auto', padding: '2rem' }}>
-        <h2>Admin Dashboard</h2>
+            <div className='p-4 m-50'>
+              <h2>Admin Dashboard</h2>
         {loading ? <p>Loading...</p> : (
           <div>
             <p>Total Users: {data.totalUsers}</p>
