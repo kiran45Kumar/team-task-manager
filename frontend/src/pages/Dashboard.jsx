@@ -27,7 +27,7 @@ const Dashboard = () => {
     <div>
       <Navbar />
       <div style={{ maxWidth: '400px', margin: 'auto', padding: '2rem' }}>
-        <h2>{data.username} Dashboard</h2>
+        <h2>Dashboard</h2>
         {loading ? <p>Loading...</p> : (
           <div>
             <p>Total Tasks: {data.totalTasks}</p>

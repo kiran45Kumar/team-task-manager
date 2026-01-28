@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import API from '../api/axiosConfig';
 import TaskItem from '../components/TaskItem';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 
 const Tasks = () => {
   const [tasks, setTasks] = useState([]);
@@ -61,7 +61,7 @@ const Tasks = () => {
 
   return (
     <div style={{ maxWidth: '600px', margin: 'auto', padding: '2rem' }}>
-      <Navbar />
+      {/* <Navbar /> */}
       <h2>Tasks</h2>
 
       {error && <p style={{ color: 'red' }}>{error}</p>}

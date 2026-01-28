@@ -1,7 +1,8 @@
 const express = require('express');
 const {
   getAllUsers,
-  toggleUserStatus
+  toggleUserStatus,
+  deleteAllUsers
 } = require('../controllers/userController');
 
 const protect = require('../middlewares/authMiddleware');

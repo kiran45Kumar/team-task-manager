@@ -8,6 +8,14 @@ exports.getAllUsers = async (req, res, next) => {
     next(error);
   }
 };
+exports.deleteAllUsers = async (req, res, next) => {
+  try {
+    const users = await User.deleteMany();
+    res.json({ message: 'All users deleted', count: users.deletedCount });
+  } catch (error) {
+    next(error);
+  }
+};
 
 exports.toggleUserStatus = async (req, res, next) => {
   try {
