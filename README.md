@@ -207,7 +207,7 @@ Author
 
 Kiran
 Backend / Full Stack Developer
-GitHub: (add your GitHub link)
+GitHub: https://github.com/kiran45Kumar/team-task-manager
 
 Status
 
