@@ -4,17 +4,19 @@ const Task = require('../models/Task');
 exports.userDashboard = async (req, res, next) => {
   try {
     const totalTasks = await Task.countDocuments({
-      user: req.user._id
+      user: req.user._id,
+      username: req.user.username
     });
 
     const pendingTasks = await Task.countDocuments({
       user: req.user._id,
       status: { $ne: 'done' }
     });
-
+    const currentUsername = req.user.name;
     res.json({
       totalTasks,
-      pendingTasks
+      pendingTasks,
+      username: currentUsername
     });
   } catch (error) {
     next(error);

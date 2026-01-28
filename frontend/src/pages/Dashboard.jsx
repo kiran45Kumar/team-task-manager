@@ -3,7 +3,7 @@ import API from '../api/axiosConfig';
 import Navbar from '../components/Navbar';
 
 const Dashboard = () => {
-  const [data, setData] = useState({ totalTasks: 0, pendingTasks: 0 });
+  const [data, setData] = useState({ totalTasks: 0, pendingTasks: 0, username: '' });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -27,7 +27,7 @@ const Dashboard = () => {
     <div>
       <Navbar />
       <div style={{ maxWidth: '400px', margin: 'auto', padding: '2rem' }}>
-        <h2>User Dashboard</h2>
+        <h2>{data.username} Dashboard</h2>
         {loading ? <p>Loading...</p> : (
           <div>
             <p>Total Tasks: {data.totalTasks}</p>

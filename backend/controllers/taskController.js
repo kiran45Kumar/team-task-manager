@@ -1,6 +1,6 @@
 const Task = require('../models/Task');
 
-// CREATE TASK
+
 exports.createTask = async (req, res, next) => {
   try {
     const task = await Task.create({
@@ -13,7 +13,7 @@ exports.createTask = async (req, res, next) => {
   }
 };
 
-// GET TASKS (User → own, Admin → all)
+
 exports.getTasks = async (req, res, next) => {
   try {
     let tasks;
@@ -30,7 +30,7 @@ exports.getTasks = async (req, res, next) => {
   }
 };
 
-// UPDATE TASK
+
 exports.updateTask = async (req, res, next) => {
   try {
     const task = await Task.findById(req.params.id);
@@ -57,7 +57,7 @@ exports.updateTask = async (req, res, next) => {
   }
 };
 
-// DELETE TASK
+
 exports.deleteTask = async (req, res, next) => {
   try {
     const task = await Task.findById(req.params.id);

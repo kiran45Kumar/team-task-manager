@@ -36,6 +36,7 @@ const Login = () => {
 
   return (
     <div style={{ maxWidth: '400px', margin: 'auto', padding: '2rem' }}>
+      <h1>Team Task Manager</h1>
       <h2>Login</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleSubmit}>
