@@ -5,7 +5,7 @@ exports.userDashboard = async (req, res, next) => {
   try {
     const totalTasks = await Task.countDocuments({
       user: req.user._id,
-      username: req.user.username
+      username: req.user.name
     });
 
     const pendingTasks = await Task.countDocuments({
