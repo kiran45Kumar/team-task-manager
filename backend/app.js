@@ -15,6 +15,9 @@ app.use(errorHandler);
 app.use('/api/users', userRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use(cors({
+  origin: '*'
+}));
 app.get('/', (req, res) => {
   res.send('API running...');
 });
